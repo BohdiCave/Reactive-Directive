@@ -1,3 +1,20 @@
+div .container {
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 1250px;
+}
+
+header, footer {
+    width: 100%;
+    padding-top: 15px;
+}
+
+main {
+    background-color:darkgray;
+    border-radius: 10px;
+    width: 100%;
+}
+
 table {
     font-size: 14px;
     border-width: 10px;
@@ -15,17 +32,19 @@ td, th {
 
 .indent {
     text-align: left;
-    padding-left: 40px;
+    padding-left: 20px;
+    width: 250px;
 }
 
 .narrow {
     padding: 5px;
+    max-width: 60px;
 }
 
 .wide {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .bg-fill {
-    background-color: #ddd;
+    background-color: #ccc;
 }
