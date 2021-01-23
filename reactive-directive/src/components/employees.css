@@ -14,7 +14,7 @@ div.header {
     justify-content: space-between;
 }
 
-div.head {
+form.head {
     padding: 15px;
 }
 
@@ -96,6 +96,8 @@ tr#_50 td.bg-fill {
 }
 
 @media screen and (max-width: 400px) {
+    div.header { flex-direction: column; }
+
     div.container { margin: 0; }
 
     table, thead, tbody {
