@@ -1,0 +1,138 @@
+div .container {
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 1250px;
+}
+
+div.header {
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form.head {
+    padding: 15px;
+}
+
+input.head {
+    border-width: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+footer {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+}
+
+main {
+    background-color:darkgray;
+    border-radius: 10px;
+    width: 100%;
+}
+
+table {
+    font-size: 14px;
+    border-width: 10px;
+    border-color: black;
+    color: black;
+}
+
+img {
+    border-radius: 10px;
+}
+
+td, th {
+    padding: 10px 10px;
+}
+
+th.bg-fill {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+tr#_50 td.bg-fill {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.center {
+    text-align: center;
+}
+
+.indent {
+    text-align: left;
+    padding-left: 20px;
+    width: 240px;
+}
+
+.narrow {
+    padding: 5px;
+    max-width: 60px;
+    word-wrap: break-word;
+}
+
+.wide {
+    padding-left: 20px;
+}
+
+.bg-fill {
+    background-color: #ccc;
+}
+
+.placeholder {
+    border: 0;
+}
+
+.empty {
+    height: 10px;
+    color: darkgray;
+    font-size: 8px;
+}
+
+@media screen and (max-width: 400px) {
+    div.header { flex-direction: column; }
+
+    div.container { margin: 0; }
+
+    table, thead, tbody {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    td img {
+        border-style: solid;
+        border-width: 2px;
+        border-color: darkred;
+    }
+
+    tr {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    td, th {
+        flex: 0 1 auto;
+        width: 85px;
+        padding: 5px;
+    }
+
+    .bg-fill {
+        background-color: transparent;
+    }
+
+    .sm-screen {
+        display: none;
+    }
+}
