@@ -1,26 +1,28 @@
 import React from "react";
 
-export default function Form({ firstName, lastName, handleFormSubmit, handleInputChange }) {
+export default function Form({ firstName, lastName, reloadResults, handleFormSubmit, handleInputChange }) {
     return (
         <form className="head">
-            <span className="text-white">Filter by first or last name:</span>
+            <button type="submit" className="reload" onClick={reloadResults}>Reload results</button>
+            <span className="text-white">Filter by the </span>
             <input 
                 value={firstName}
                 onChange={handleInputChange} 
                 name="firstName" 
-                className="head"
+                className="input"
                 type="text" 
-                placeholder="Enter the first name" 
+                placeholder="first name" 
             />
+            <span className="text-white"> OR by the </span>
             <input
                 value={lastName}
                 onChange={handleInputChange}
                 name="lastName"
-                className="head"
+                className="input"
                 type="text"
-                placeholder="Enter the last name"
+                placeholder="last name"
             />
-            <button onClick={handleFormSubmit}>Filter</button>
+            <button type="submit" className="filter" onClick={handleFormSubmit}>Filter</button>
         </form>
     );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Results({employees}) {
+export default function Results({employees, sortResults}) {
     return (
       <table>
         <thead>
@@ -11,7 +11,14 @@ export default function Results({employees}) {
           <th className="narrow sm-screen">Title</th>
           <th className="bg-fill">First Name</th>
           <th>Last Name</th>
-          <th className="bg-fill">Yrs <br/> Empl.</th>
+          <th className="bg-fill">Yrs <br/> Empl. <br/>
+            <button className="sort">
+              <svg xmlns="http://www.w3.org/2000/svg" class="svg-triangle">
+                <polygon id="desc" onClick={sortResults} points="0,0 10,0 5,10"/> 
+                <polygon id="asc" onClick={sortResults} points="15,10 25,10 20,0"/>
+              </svg>
+            </button>
+          </th>
           <th className="sm-screen">Age</th>
           <th className="bg-fill narrow sm-screen">Gender</th>
           <th className="narrow sm-screen">Time Zone,<br/>GMT+/-</th>

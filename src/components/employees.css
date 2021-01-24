@@ -2,6 +2,7 @@
 img { border-radius: 10px; }
 .center { text-align: center; }
 .placeholder { border: 0; }
+h2#title { margin-left: 10px; margin-top: 5px;}
 
 /* Container and Main */
 div.container {
@@ -26,12 +27,23 @@ div.header {
     justify-content: space-between;
 }
 form.head { padding: 15px; }
-input.head {
+.input {
     border-width: 0;
     border-radius: 5px;
-    margin-left: 10px;
+    margin: 0px 10px;
     padding-left: 10px;
+    width: 160px;
 }
+button.filter, button.reload {
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 2px 20px;
+    border-width: 0px;
+    background-color: darkgray;
+    text-shadow: 1px 1px 1px gray;
+    box-shadow: 1px 1px 4px 2px #333;
+}
+button.reload { margin-right: 80px;}
 
 /* Main - Table of results */
 table {
@@ -63,6 +75,20 @@ tr#_50 td.bg-fill {
 }
 .wide { padding-left: 20px; }
 .bg-fill { background-color: #ccc; }
+.svg-triangle {
+    margin: 0 auto;
+    width: 30px;
+    height: 10px;
+}
+.svg-triangle polygon {
+    fill:black;
+    stroke:black;
+    stroke-width: 0.5;
+}
+button.sort {
+    background-color: transparent;
+    border: 0;
+}
 
 
 /* Footer */

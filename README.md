@@ -13,7 +13,8 @@ A React.js app providing an easy way to access employee information
 * Props 
 * [Random User API](https://randomuser.me/) to generate mock user data
 * Axios package to make API requests  
-* Filtering and sorting functionality after the request results are loaded
+* Filtering based on either first or last name ("Reload results" button to return to the full list) 
+* Sorting based on years employed - ascending or descending (buttons are conveniently located in the table header) 
 
 ## Some potential venues for future development
 
@@ -27,6 +28,14 @@ OR
 
 ![Screenshot 1](./public/screen1.png)
 ![Screenshot 2](./public/screen2.png)
+
+## Filtered results: 
+
+![Screenshot 3](./public/screen3-filtered.png)
+
+## Sorted (descending): 
+
+![Screenshot 4](./public/screen4-sorted.png)
 
 ## Link to the deployed app
 
